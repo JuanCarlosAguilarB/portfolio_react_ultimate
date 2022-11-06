@@ -4,13 +4,21 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { HomePage } from './pages/Home';
 import { PageTwo } from './pages/Page2';
 
+import { Sidebar } from './components';
+
 const App = () => (
+
+    <>  
+ 
   <BrowserRouter>
+    <Sidebar> </Sidebar>
     <Switch>
       <Route path="/" exact component={HomePage} />
       <Route path="/page2" exact component={PageTwo} />
     </Switch>
+    
   </BrowserRouter>
+  </>
 );
 
 export default App;
