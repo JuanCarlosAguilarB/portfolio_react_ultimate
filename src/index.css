@@ -1827,7 +1827,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article { width: auto; }
+  .sidebar, article { width: auto; height: auto;}
 
   article { min-height: 100%; }
 
@@ -1861,8 +1861,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar {
     position: sticky;
     top: 60px;
+    height: auto;
     max-height: max-content;
-    height: 100%;
     margin-bottom: 0;
     padding-top: 60px;
     z-index: 1;

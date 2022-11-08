@@ -1,121 +1,104 @@
 import React from 'react'
 
 // import "./index.css";
+// icons
+import { CiLinkedin } from 'react-icons/ci';
+import { IoMdPhonePortrait } from 'react-icons/io';
+import { AiOutlineMail, AiOutlineGithub } from 'react-icons/ai';
+import { TbExternalLink } from 'react-icons/tb';
 
 import profile_image from "../../assets/images/bakend.png";
+
 
 const Sidebar = () => {
   return (
     <div>
-         <aside className="sidebar" data-sidebar>
+      <aside className="sidebar" data-sidebar>
 
-<div className="sidebar-info">
-  <figure className="avatar-box">
-    <img src={profile_image} alt="profile_image" />
-  </figure>
- 
-  <div className="info-content">
-    <h1 className="name" title="Richard hanrick">Juan Carlos Aguilar</h1>
+        <div className="sidebar-info">
+          <figure className="avatar-box">
+            <img src={profile_image} alt="profile_image" />
+          </figure>
 
-    <p className="title">Backend developer and junior Frontend developer </p>
-  </div>
+          <div className="info-content">
+            <h1 className="name" title="Richard hanrick">Juan Carlos Aguilar</h1>
 
-  <button className="info_more-btn" data-sidebar-btn>
-    <span>Show Contacts</span>
+            <p className="title">Backend developer and junior Frontend developer </p>
+          </div>
 
-    <ion-icon name="chevron-down"></ion-icon>
-  </button>
+          <button className="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-</div>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
 
-<div className="sidebar-info_more">
+        </div>
 
-  <div className="separator"></div>
+        <div className="sidebar-info_more">
 
-  <ul className="contacts-list">
+          <div className="separator"></div>
 
-    <li className="contact-item">
+          <ul className="contacts-list">
 
-      <div className="icon-box">
-        <ion-icon name="mail-outline"></ion-icon>
-      </div>
+            <li className="contact-item">
 
-      <div className="contact-info">
-        <p className="contact-title" >Email</p>
-        <p className="contact-link" >abjuancarlos.12@gmail.com</p>
-      </div>
+              <div className="icon-box">
+                <AiOutlineMail />
+              </div>
 
-    </li>
+              <div className="contact-info">
+                <p className="contact-title" >Email</p>
+                <p className="contact-link" >abjuancarlos.12@gmail.com</p>
+              </div>
 
-    <li className="contact-item">
+            </li>
 
-      <div className="icon-box">
-        <ion-icon name="phone-portrait-outline"></ion-icon>
-      </div>
+            <li className="contact-item">
 
-      <div className="contact-info">
-        <p className="contact-title">Phone</p>
-        <p className="contact-link" >+573194038589</p>
-      </div>
-    </li>
+              <div className="icon-box">
+                <IoMdPhonePortrait />
+              </div>
 
-    <li className="contact-item">
+              <div className="contact-info">
+                <p className="contact-title">Phone</p>
+                <p className="contact-link" >+573194038589</p>
+              </div>
+            </li>
 
-      <div className="icon-box">
-        <ion-icon name="calendar-outline"></ion-icon>
-      </div>
+            <li className="contact-item">
 
-      <div className="contact-info">
-        <p className="contact-title">Birthday</p>
+              <div className="icon-box">
+                <CiLinkedin />
+              </div>
 
-        <time datetime="1982-06-23">June 23, 1982</time>
-      </div>
+              <div className="contact-info">
+                <p className="contact-title">Linkedin</p>
+                <a href="https://www.linkedin.com/in/juan-carlos-aguilar-bosiga-41b067192/" className=" contact-link social-link" target="_blank" rel="noreferrer"> Juan Carlos Aguilar Bosiga </a>
+              </div>
 
-    </li>
+            </li>
 
-    <li className="contact-item">
+            <li className="contact-item">
 
-      <div className="icon-box">
-        <ion-icon name="location-outline"></ion-icon>
-      </div>
+              <div className="icon-box">
+                <AiOutlineGithub />
+              </div>
 
-      <div className="contact-info">
-        <p className="contact-title">Location</p>
 
-        <address>Sacramento, California, USA</address>
-      </div>
+              <div className="contact-info">
+                <p className="contact-title">github</p>
+                <p className="contact-link" >JuanCarlosAguilarB  <a href="https://github.com/JuanCarlosAguilarB" className=" contact-link social-link" target="_blank" rel="noreferrer" > <TbExternalLink /> </a>
 
-    </li>
+                </p>
 
-  </ul>
 
-  <div className="separator"></div>
+              </div>
 
-  <ul className="social-list">
+            </li>
 
-    <li className="social-item">
-      <a href="#" className="social-link">
-        <ion-icon name="logo-facebook"></ion-icon>
-      </a>
-    </li>
-
-    <li className="social-item">
-      <a href="#" className="social-link">
-        <ion-icon name="logo-twitter"></ion-icon>
-      </a>
-    </li>
-
-    <li className="social-item">
-      <a href="#" className="social-link">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a>
-    </li>
-
-  </ul>
-
-</div>
-
-</aside>
+          </ul>
+        </div>
+      </aside>
     </div>
   )
 }
