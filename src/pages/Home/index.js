@@ -7,6 +7,9 @@ import nodejs from "../../assets/images/nodejs.png";
 import fastapi from "../../assets/images/fastapi.png";
 import react_img from "../../assets/images/react.png";
 
+// esto es propio de webpakc para inportar las imagenes de ofrma dinámica
+
+import  Knowledge  from "./componets/Knowledges"
 
 
 export function HomePage() {
@@ -110,7 +113,7 @@ export function HomePage() {
       - testimonials
     --> */}
 
-    <section className="testimonials">
+    {/* <section className="testimonials">
 
       <h3 className="h3 testimonials-title">Testimonials</h3>
 
@@ -206,7 +209,7 @@ export function HomePage() {
 
       </ul>
 
-    </section>
+    </section> */}
 
 
     {/* <!--
@@ -255,54 +258,10 @@ export function HomePage() {
 
 
     {/* <!--
-      - clients
+      - knowledges
     --> */}
 
-    <section className="clients">
-
-      <h3 className="h3 clients-title">Clients</h3>
-
-      <ul className="clients-list has-scrollbar">
-
-        <li className="clients-item">
-          <a href="#">
-            <img src="./assets/images/logo-1-color.png" alt="client logo"/>
-          </a>
-        </li>
-
-        <li className="clients-item">
-          <a href="#">
-            <img src="./assets/images/logo-2-color.png" alt="client logo"/>
-          </a>
-        </li>
-
-        <li className="clients-item">
-          <a href="#">
-            <img src="./assets/images/logo-3-color.png" alt="client logo"/>
-          </a>
-        </li>
-
-        <li className="clients-item">
-          <a href="#">
-            <img src="./assets/images/logo-4-color.png" alt="client logo"/>
-          </a>
-        </li>
-
-        <li className="clients-item">
-          <a href="#">
-            <img src="./assets/images/logo-5-color.png" alt="client logo"/>
-          </a>
-        </li>
-
-        <li className="clients-item">
-          <a href="#">
-            <img src="./assets/images/logo-6-color.png" alt="client logo"/>
-          </a>
-        </li>
-
-      </ul>
-
-    </section>
+    <Knowledge/>
 
   </article>
   );
