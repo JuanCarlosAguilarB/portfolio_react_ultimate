@@ -2,6 +2,13 @@ import logo from '../../logo.svg';
 // import './style.css';
 import { Link } from 'react-router-dom';
 
+import drf from "../../assets/images/drf.jpeg";
+import nodejs from "../../assets/images/nodejs.png";
+import fastapi from "../../assets/images/fastapi.png";
+import react_img from "../../assets/images/react.png";
+
+
+
 export function HomePage() {
   return (
     <article className="about  active" data-page="about">
@@ -12,18 +19,11 @@ export function HomePage() {
 
     <section className="about-text">
       <p>
-        I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-        I enjoy
-        turning complex problems into simple, beautiful and intuitive designs.
+      Electronic engineer focused on backend development with python and node js with more than two years working with python. I like to be responsible and I have teamwork skills; imagination and initiative to develop new ideas and make decisions.
       </p>
 
       <p>
-        My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-        Moreover, I
-        add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-        across your
-        message and identity in the most creative way. I created web design for many famous brand companies.
-      </p>
+      I am focused on creating reusable, testable, and efficient code that meets customer needs. </p>
     </section>
 
 
@@ -33,22 +33,21 @@ export function HomePage() {
 
     <section className="service">
 
-      <h3 className="h3 service-title">What i'm doing</h3>
+      <h3 className="h3 service-title">What i'm doing. </h3>
 
       <ul className="service-list">
 
         <li className="service-item">
 
           <div className="service-icon-box">
-            <img src="./assets/images/icon-design.svg
-            " alt="design icon" width="40"/>
+            <img src={drf} alt="design icon" width="90"/>
           </div>
 
           <div className="service-content-box">
-            <h4 className="h4 service-item-title">Web design</h4>
+            <h4 className="h4 service-item-title">Backend services with DRF</h4>
 
             <p className="service-item-text">
-              The most modern and high-quality design made at a professional level.
+            Develop, maintain and manage projects with django rest framework and postgreSQL. In addition, to develop projects with only django.
             </p>
           </div>
 
@@ -57,14 +56,14 @@ export function HomePage() {
         <li className="service-item">
 
           <div className="service-icon-box">
-            <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40"/>
+            <img src={nodejs} alt="Web development icon" width="100"/>
           </div>
 
           <div className="service-content-box">
-            <h4 className="h4 service-item-title">Web development</h4>
+            <h4 className="h4 service-item-title">Backend services with node js</h4>
 
             <p className="service-item-text">
-              High-quality development of sites at the professional level.
+               Develop, maintain and manage projects with node js using clean architecture. In addition to handling microservices, redis and non-relational databases such as mongoDB.
             </p>
           </div>
 
@@ -73,14 +72,14 @@ export function HomePage() {
         <li className="service-item">
 
           <div className="service-icon-box">
-            <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40"/>
+            <img src={fastapi} alt="mobile app icon" width="90" height="50"/>
           </div>
 
           <div className="service-content-box">
-            <h4 className="h4 service-item-title">Mobile apps</h4>
+            <h4 className="h4 service-item-title">Backend services with Fastapi</h4>
 
             <p className="service-item-text">
-              Professional development of applications for iOS and Android.
+            Develop, maintain and manage projects with FastAPI and postgreSQL. Oriented to both microservices and monoliths.
             </p>
           </div>
 
@@ -89,14 +88,14 @@ export function HomePage() {
         <li className="service-item">
 
           <div className="service-icon-box">
-            <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40"/>
+            <img src={react_img} alt="camera icon" width="100"/>
           </div>
 
           <div className="service-content-box">
-            <h4 className="h4 service-item-title">Photography</h4>
+            <h4 className="h4 service-item-title">React junior developer</h4>
 
             <p className="service-item-text">
-              I make high-quality photos of any category at a professional level.
+            Development of frontend systems implementing clean architecture
             </p>
           </div>
 
