@@ -12,7 +12,6 @@ import profile_image from "../../assets/images/bakend.png";
 
 const Sidebar = () => {
   return (
-    <div>
       <aside className="sidebar" data-sidebar>
 
         <div className="sidebar-info">
@@ -99,7 +98,6 @@ const Sidebar = () => {
           </ul>
         </div>
       </aside>
-    </div>
   )
 }
 

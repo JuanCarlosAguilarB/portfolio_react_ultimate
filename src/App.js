@@ -12,7 +12,7 @@ const App = () => (
       <main className='flex'>
         <Sidebar > </Sidebar>
     {/* <img src="./assets/images/bakend.png" alt=""/> */}
-        <div className='flex'>
+    <div class="main-content">
           <Navbar className='flex'></Navbar>
           <Switch>
             <Route path="/" exact component={HomePage} />
