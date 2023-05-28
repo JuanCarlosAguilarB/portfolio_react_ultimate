@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import Nav from "react-bootstrap/Nav";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "../../../Core/Hooks";
 
-const Navbar = () => {
+export const Navbar = () => {
   const [widthWindowNavigator, heightWindowNavigator] = useMediaQuery();
 
   const [isShowOptionsMenuHamburguer, setIsShowOptionsMenuHamburguer] =
@@ -63,4 +61,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+
