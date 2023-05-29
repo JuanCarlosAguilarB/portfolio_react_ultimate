@@ -6,7 +6,8 @@ import {
   RouterProvider,
   Routes,
 } from "react-router-dom";
-import Navbar from "../Components/Atoms/Navbar/Navbar";
+import {Navbar} from "../Components/Atoms";
+import { Home } from "../Components/Pages";
 
 export function RoutesProject() {
   return (
@@ -15,26 +16,16 @@ export function RoutesProject() {
       <main>
         <Routes element={<Navbar />}>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/blog/*" element={<BlogApp />} />
           <Route path="/users/*" element={<UserApp />} />
         </Routes>
       </main>
-      <footer>©️ me 2023</footer>
     </BrowserRouter>
   );
 }
 
-function Home() {
-  return (
-    <>
-      <h1>Welcome!</h1>
-      <p>
-        Check out the <Link to="/blog">blog</Link> or the{" "}
-        <Link to="users">users</Link> section
-      </p>
-    </>
-  );
-}
+
 
 function BlogApp() {
   return (

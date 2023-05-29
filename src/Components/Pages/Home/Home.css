@@ -1,0 +1,144 @@
+.home-screen{
+    /* width: 100%; */
+    height: cal(100vh-72px);
+}
+
+.home-container__header{
+    display: flex;
+
+    gap : 10rem;
+    padding: 0 1rem;
+
+}
+
+
+.home-container__header-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    min-width: 400px;
+    width: 700px;
+
+    padding-left: 100px;
+
+    gap: 1rem;
+
+    text-align: start;
+}
+
+.home-container__header-main-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+
+    min-width: 300px;
+    width: 600px;
+    /* word-break: break-word; */
+}
+
+.home-container__header-sub-text {
+    font-size: 1.5rem;
+    color: #000;
+    transition: font-size 0.8s linear, color 1.2s linear;
+  }
+
+  .home-container__header-sub-text:hover {
+    color: #502c8e;
+    font-size: 1.52rem;
+  }
+
+.home-container__header-sub-text:before {
+    content:'[ ';
+    line-height:40px;
+    color:#502c8e;
+    font-size: 1.8rem;
+    animation:2s linear 0s normal none infinite opacity;
+    -webkit-animation:2s ease-out 0s normal none infinite opacity;
+    -moz-animation:2s ease-out 0s normal none infinite opacity;
+    -o-animation:2s ease-out 0s normal none infinite opacity;
+  }
+
+.home-container__header-sub-text:after {
+    content:' ] ';
+    line-height:40px;
+
+    color:#502c8e;
+    font-size: 1.8rem;
+    animation:2s linear 0s normal none infinite opacity;
+    -webkit-animation:2s ease-out 0s normal none infinite opacity;
+    -moz-animation:2s ease-out 0s normal none infinite opacity;
+    -o-animation:2s ease-out 0s normal none infinite opacity;
+  }
+
+
+.home-container__header-recent-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    min-width: 400px;
+    width: 700px;
+
+    padding-left: 100px;
+
+    gap: 1rem;
+
+    text-align: start;
+  }
+
+
+.home-container__footer{
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem 7rem;
+
+    font-size: 1.5rem;
+
+    color: #692536;
+
+}
+
+.home-container__footer-social{
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+
+
+  @-webkit-keyframes opacity {
+    0%   {opacity:0;}
+    50%  {opacity:1;}
+    100% {opacity:0;}
+  }
+  @keyframes opacity {
+    0%   {opacity:0;}
+    50%  {opacity:1;}
+    100% {opacity:0;}
+  }
+
+  @-webkit-keyframes change {
+    0%   {margin-top:0;}
+    15%  {margin-top:0;}
+    25%  {margin-top:-40px;}
+    40%  {margin-top:-40px;}
+    50%  {margin-top:-80px;}
+    65%  {margin-top:-80px;}
+    75%  {margin-top:-40px;}
+    85%  {margin-top:-40px;}
+    100% {margin-top:0;}
+  }
+  @keyframes change {
+    0%   {margin-top:0;}
+    15%  {margin-top:0;}
+    25%  {margin-top:-40px;}
+    40%  {margin-top:-40px;}
+    50%  {margin-top:-80px;}
+    65%  {margin-top:-80px;}
+    75%  {margin-top:-40px;}
+    85%  {margin-top:-40px;}
+    100% {margin-top:0;}
+  }
