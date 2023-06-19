@@ -6,8 +6,8 @@ import {
   RouterProvider,
   Routes,
 } from "react-router-dom";
-import {Navbar} from "../Components/Atoms";
-import { Home } from "../Components/Pages";
+import { Navbar } from "../Components/Atoms";
+import { Home, AboutMe } from "../Components/Pages";
 
 export function RoutesProject() {
   return (
@@ -20,12 +20,11 @@ export function RoutesProject() {
           <Route path="/blog/*" element={<BlogApp />} />
           <Route path="/users/*" element={<UserApp />} />
         </Routes>
+        <AboutMe />
       </main>
     </BrowserRouter>
   );
 }
-
-
 
 function BlogApp() {
   return (

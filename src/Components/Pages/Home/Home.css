@@ -1,6 +1,12 @@
 .home-screen {
   width: 99vw;
   height: 100vh;
+  background-color: #f9f9f9;
+
+  display: grid;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  align-content: center;
 }
 
 .home-container__header {
@@ -9,7 +15,8 @@
 
   gap: 10rem;
   padding: 0 1rem;
-  margin-top: 20rem;
+  /* margin-top: 20rem; */
+  /* padding-top: 25rem; */
 }
 
 

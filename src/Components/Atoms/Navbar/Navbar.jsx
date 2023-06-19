@@ -44,7 +44,7 @@ export const Navbar = () => {
             Home
           </Link>
           <Link className="navbar_container-list-link" to="/About">
-            About
+            About Me
           </Link>
           <Link className="navbar_container-list-link" to="/Projects">
             Projects
