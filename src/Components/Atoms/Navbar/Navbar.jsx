@@ -46,6 +46,15 @@ export const Navbar = () => {
           <Link className="navbar_container-list-link" to="/About">
             About Me
           </Link>
+
+          {/* <Link className="navbar_container-list-link" to="/About">
+            Experience
+          </Link> */}
+
+          {/* <Link className="navbar_container-list-link" to="/About">
+            Expertise
+          </Link> */}
+
           <Link className="navbar_container-list-link" to="/Projects">
             Projects
           </Link>

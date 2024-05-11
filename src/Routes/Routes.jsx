@@ -7,7 +7,7 @@ import {
   Routes,
 } from "react-router-dom";
 import { Navbar } from "../Components/Atoms";
-import { Home, AboutMe } from "../Components/Pages";
+import { Home, AboutMe, Projects, ContactMe } from "../Components/Pages";
 
 export function RoutesProject() {
   return (
@@ -21,6 +21,8 @@ export function RoutesProject() {
           <Route path="/users/*" element={<UserApp />} />
         </Routes>
         <AboutMe />
+        {/* <ContactMe /> */}
+        {/* <Projects /> */}
       </main>
     </BrowserRouter>
   );
